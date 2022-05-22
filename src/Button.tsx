@@ -1,5 +1,5 @@
 import React, { HtmlHTMLAttributes, ReactNode } from 'react';
-
+import "./index.css"
 export interface Props extends HtmlHTMLAttributes<HTMLButtonElement> {
   /**  Provide  a text*/
   children: ReactNode;
@@ -15,14 +15,8 @@ export const Button = ({ children, variant = 'primary', ...props }: Props) => {
   return (
     <button
       {...props}
-      style={{
-        backgroundColor: variant === 'primary' ? 'blue' : 'gray',
-        color: 'white',
-        border: 'none',
-        borderRadius: 100,
-        padding: 10,
-        cursor: 'pointer',
-      }}
+      
+      className={`${variant === 'primary' ? 'bg-blue-500': 'bg-gray-800'} text-gray-200 px-4 py-2 rounded-lg`}
     >
       {children}
     </button>

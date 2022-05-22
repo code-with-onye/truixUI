@@ -59,14 +59,21 @@
     "@storybook/react": "^6.5.3",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
-    "babel-loader": "^8.2.5",
+    "autoprefixer": "^9",
+    "babel-loader": "8.1.0",
     "husky": "^8.0.1",
+    "postcss": "^7",
+    "postcss-loader": "^4.3.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-is": "^18.1.0",
     "size-limit": "^7.0.8",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@storybook/addon-postcss": "^2.0.0"
   }
 }
