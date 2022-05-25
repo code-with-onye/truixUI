@@ -1,5 +1,4 @@
 import React, { HtmlHTMLAttributes, ReactNode } from 'react';
-import "./index.css";
 export interface Props extends HtmlHTMLAttributes<HTMLButtonElement> {
   /**  Provide  a text*/
   children: ReactNode;
