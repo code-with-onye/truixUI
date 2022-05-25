@@ -25,10 +25,17 @@ export default meta;
 const Template: Story<Props> = args => <Button {...args} />;
 
 export const Default = Template.bind({});
-export const Secondary = Template.bind({});
+export const Text = Template.bind({});
+export const Outlined = Template.bind({});
 
-Secondary.args = {
-  variant: 'secondary',
-  children: 'i am button',
+Text.args = {
+  variant: 'text',
+  children: 'Text',
   onClick: action('secondary click'),
+};
+
+Outlined.args = {
+  variant: 'outlined',
+  children: 'Outlined',
+  onClick: action('OUTLINE'),
 };
