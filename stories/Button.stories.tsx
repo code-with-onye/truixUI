@@ -29,13 +29,13 @@ export const Text = Template.bind({});
 export const Outlined = Template.bind({});
 
 Text.args = {
-  variant: 'text',
-  children: 'Text',
+  variant: 'dark',
+  children: 'Dark',
   onClick: action('secondary click'),
 };
 
 Outlined.args = {
-  variant: 'outlined',
+  variant: 'light',
   children: 'Outlined',
-  onClick: action('OUTLINE'),
+  onClick: action(''),
 };

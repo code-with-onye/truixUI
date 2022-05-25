@@ -18,7 +18,14 @@ Let's define a story for our `Button` component:
 
 Extra  Description
 <Canvas>
-    <Story name="Secondary" args={{ children: 'Secondary', variant:' secondary'}}>
+   <Story name="primary" args={{ children: 'Prmary', variant:'default'}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="dark" args={{ children: 'Dark', variant:'dark'}}>
+        {Template.bind({})}
+    </Story>
+    <Story name="light" args={{ children: 'Light', variant:'light'}}>
         {Template.bind({})}
     </Story>
 </Canvas>
+
