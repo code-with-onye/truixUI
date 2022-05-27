@@ -30,12 +30,13 @@ export const Outlined = Template.bind({});
 
 Text.args = {
   variant: 'dark',
+   size: "large",
   children: 'Dark',
   onClick: action('secondary click'),
 };
 
 Outlined.args = {
-  variant: 'light',
+  variant: 'small',
   children: 'Outlined',
   onClick: action(''),
 };
